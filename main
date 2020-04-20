@@ -1,0 +1,53 @@
+def add(x, y):
+    return x + y
+
+
+# Function subtract
+def minus(x, y):
+    return x - y
+
+
+# Function divide
+def divide(x, y):
+    return x / y
+
+
+# Function multiply
+def multiply(x, y):
+    return x * y
+
+
+# Variable First Number
+iNum1 = float(input("Enter your 1st Number: "))
+# Operator Input
+
+print(
+    '|||----------------------|||\n'
+    '|||----------------------|||\n'
+    '|||----------------------|||\n'
+    '||| + for Addition       |||\n'
+    '||| - for Subtraction    |||\n'
+    '||| * for Multiplication |||\n'
+    '||| / for Division       |||\n'
+    '|||----------------------|||\n'
+    '|||----------------------|||\n'
+    '|||----------------------|||\n'
+)
+simple_calculator = input("Enter Operator: ")
+
+# Variable Second Number
+iNum2 = float(input("Enter your 2nd Number: "))
+
+if simple_calculator == '+':
+    print(iNum1, "+", iNum2, "=", add(iNum1, iNum2))
+elif simple_calculator == '-':
+    print(iNum1, "-", iNum2, "=", minus(iNum1, iNum2))
+elif simple_calculator == '*':
+    print(iNum1, "*", iNum2, "=", multiply(iNum1, iNum2))
+elif simple_calculator == '/':
+    if iNum2 == 0:
+        print("Cannot divide by Zero.")
+    else:
+        print(iNum1 / iNum2)
+
+exit_program = input("type y for exit: ")
